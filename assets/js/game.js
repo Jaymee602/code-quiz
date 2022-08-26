@@ -8,7 +8,7 @@ const timer = document.querySelector("#timer")
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
-let time = 100;
+let time = 60;
 let penalty = 10;
 let questionCounter = 0;
 let availableQuestions = [];
@@ -18,6 +18,7 @@ function decrementTime(myInterval) {
     timer.textContent = time;
     if (time === 0) {
         clearInterval(myInterval)
+        getNewQuestion();
     }
 }
 
@@ -75,7 +76,7 @@ startGame = () => {
 
 getNewQuestion = () => {
     // if there are no more questions then end game and save score to localStorage
-    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+    if(availableQuestions.length === 0 || time === 0) {
         localStorage.setItem('mostRecentScore', score);
         localStorage.setItem('mostRecentTime', time);
 
