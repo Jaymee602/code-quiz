@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2.3rem;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    font-size: 1.7rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: purple;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: palevioletred;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    background-color: purple;
+}
+
+#highscore-btn {
+    background-color: #003844;
+}
+
+#highscore-btn:hover {
+    background-color: #5465ff;
+    cursor: pointer;
+}
+
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+#finalScore {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    font-size: 3rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+input::placeholder {
+    color:#aaa;
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text {
+    font-size: 2.4rem;
+    text-align: center;
+    padding: 0;
+}
+
+#saveScoreBtn{
+    border: none;
+}

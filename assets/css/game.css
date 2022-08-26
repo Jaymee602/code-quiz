@@ -1,0 +1,70 @@
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background-color: purple;
+    font-size: 3rem;
+    min-width: 50rem;
+    border-radius: 30px;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 0.2rem rgba(66, 17, 100, 0.9);
+    transform: scale(1.02);
+    transform: transform 150ms;
+} 
+
+.choice-prefix {
+    padding : 2rem 2.5rem;
+    color: white;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+    color: white;
+}
+
+.correct {
+    background-color: #43AA8B;
+}
+
+.incorrect {
+    background-color: #DB504A;
+}
+
+/* Heads up display */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid black;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background-color: rgb(11,223,36);
+    width: 0%;
+}
+
+#question {
+    text-align: center;
+}
