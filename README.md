@@ -13,6 +13,3 @@ Test your coding knowledge!
 
 ## Preview
 ![Website preview](./assets/preview.jpg)
-
-## Contribution
-Jaymee McCarthy
